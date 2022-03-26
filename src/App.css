@@ -4,9 +4,11 @@
   --primary-white: #7A2F1E ;
   --primary-orange: #D76E25; 
   --primary-dark: #4C2A12;
+  --primary-yellow: #ddeb98;
+  --primary-beige: #f1f5ed;
 }
 body {
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
  .App {
   text-align: center;
@@ -32,6 +34,7 @@ nav a.nav-link{
   display: inline-block;
   cursor: pointer;
 
+
 }
 
 nav ul li {
@@ -43,6 +46,7 @@ nav ul li {
   margin-left: 0.75 rem;
   color: var(--primary-white) !important;
   border-top: 0.1rem solid var(--primary-dark);
+  color: var(--primary-white);
 }
 
 .navbar-brand {
@@ -53,4 +57,57 @@ nav ul li {
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var --primary-orange
+}
+
+/* Header */
+.header-wraper {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color:(--primary-yellow);
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  position: center;
+
+}
+
+/* -----About-------- */
+.About {
+  background-size: cover;
+  background-color: var(--primary-dark);
+  color: var(--primary-beige);
+  font-size:larger;
+
+
+}
+
+/*  header button */
+btn-main-offer {
+  border: 1px solid var(--primary-grey);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+  color: var(--primary-white)
+}
+
+/* ----------contact-------------- */
+contact {
+  letter-spacing: 0.0375rem;
+  display: inline-block;
+font-size: small;
 }
